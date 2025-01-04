@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/ContactUs.css" />
+    <link rel="stylesheet" href="../css/homepage.css" />
+    <!--import from google fonts - poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-box-container">
+      <div class="header-box">
+        <div class="header-right">
+          <nav>
+            <ul>
+              <li class="home">
+                <a href="../html code/homepage.html" class="Option">Home</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="logo">
+          <a href=""
+            ><img src="../images/monti logo svg.svg" alt="Monti Logo"
+          /></a>
+        </div>
+        <nav>
+          <a href="#" class="menu-open hide-desktop" onclick="return false;">
+            <img src="../images/hamburger.svg" alt="hamburger menu icon" />
+          </a>
+          <div class="header-left">
+            <ul class="optionPopup">
+              <li>
+                <a
+                  href="#"
+                  class="menu-close hide-desktop"
+                  onclick="return false;"
+                >
+                  <img src="../images/close icon.png" alt="close menu icon" />
+                </a>
+              </li>
+              <li><a href="menu.html" class="Option hide-mobile">Menu</a></li>
+              <li>
+                <a href="../html code/ContactUs.html" class="Option hide-mobile"
+                  >Contact Us</a
+                >
+                <div class="bar"></div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <section class="contact-page">
+      <div class="slide-container">
+        <div class="slider-wrapper">
+          <div class="slide">
+            <img
+              id="slide-1"
+              src="../images/iium.png"
+              alt="monti now at iium"
+            />
+            <img
+              id="slide-2"
+              src="../images/promotion.png"
+              alt="monti has promotion"
+            />
+            <img
+              id="slide-3"
+              src="../images/barista.png"
+              alt="hiring barista"
+            />
+          </div>
+          <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="title">
+        <h2>We Are Here For You</h2>
+        <p>
+          "Have questions? We'd love to hear from you. Fill out the form or
+          contact us directly!"
+        </p>
+      </div>
+
+      <div class="option-container">
+        <div class="monti">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfXkOgofRvU9UitAXWqwCko6FUJxnIb-aSOkAFTYLwsm9aU0Q/viewform"
+            target="_blank"
+            class="monti"
+          >
+            <img
+              src="../icons/barista.png"
+              alt="Monti Icon"
+              class="option-icon"
+            />
+            Become part of MontiKeopi
+          </a>
+        </div>
+
+        <div class="partner">
+          <a
+            href="https://api.whatsapp.com/send?phone=60183944438&text=Hi, I would like to know more about montipartnership"
+            target="_blank"
+            class="patner"
+          >
+            <img
+              src="../icons/owner.png"
+              alt="Partner Icon"
+              class="option-icon"
+            />
+            Partner Program For Your Own Store
+          </a>
+        </div>
+
+        <div class="event">
+          <a
+            href="https://api.whatsapp.com/send?phone=60183944438&text=Hi, I need your service for an event"
+            target="_blank"
+            class="event"
+          >
+            <img
+              src="../icons/coffee-cup.png"
+              alt="Event Icon"
+              class="option-icon"
+            />
+            Coffe Service for Events
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-left">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.39038499393!2d101.73227457497164!3d3.2527833967222675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49a7e607d83b%3A0x3eca0fc07163b85e!2sMonti%20Keopi%20-%20UIAM%20Gombak!5e0!3m2!1sen!2smy!4v1734445728448!5m2!1sen!2smy"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contact-right"
+        >
+          <div class="contact-right-title">
+            <h2>Get in touch</h2>
+            <hr />
+          </div>
+          <input
+            type="hidden"
+            name="access_key"
+            value="ba6f17c7-4655-4708-9ed5-44ec847f4c0c"
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="contact-input"
+            required
+          />
+          <input
+            type="text"
+            name="email"
+            placeholder="Your Email"
+            class="contact-input"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            class="contact-input"
+            required
+          ></textarea>
+          <button type="submit">
+            Submit <img src="../icons/arrow_icon.png" />
+          </button>
+        </form>
+      </div>
+
+      <div class="social-container">
+        <div class="sosial-info">
+          <p>
+            <strong>Customer Service:</strong>
+            montikeopi@gmail.com | +6013 310 2260
+          </p>
+          <br />
+          <p>This is our social media</p>
+        </div>
+        <div class="sosial-icon">
+          <a href="https://www.instagram.com/monti.keopi/" target="_blank">
+            <img src="../icons/instagram.png" alt="instagram" />
+          </a>
+          <a href="https://www.tiktok.com/@montikeopi" target="_blank">
+            <img src="../icons/tiktok.png" alt="tiktok" />
+          </a>
+          <a href="https://www.facebook.com/montikeopi" target="_blank">
+            <img src="../icons/facebook.png" alt="faceook" />
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=60183944438&text=montipartnership"
+            target="_blank"
+          >
+            <img src="../icons/whatsapp.png" alt="whatsapp" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="../javaScript/hamburger.js"></script>
+    <script src="../javaScript/slider.js"></script>
+  </body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monti Keopi - Menu</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--jQuery for Search Bar-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/homepage.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header-box-container">
+      <div class="header-box">
+        <div class="header-right">
+          <nav>
+            <ul>
+              <li class="home">
+                <a href="../html code/homepage.html" class="Option">Home</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="logo">
+          <a href=""
+            ><img src="../images/monti logo svg.svg" alt="Monti Logo"
+          /></a>
+        </div>
+        <nav>
+          <a href="#" class="menu-open hide-desktop" onclick="return false;">
+            <img src="../images/hamburger.svg" alt="hamburger menu icon" />
+          </a>
+          <div class="header-left">
+            <ul class="optionPopup">
+              <li>
+                <a
+                  href="#"
+                  class="menu-close hide-desktop"
+                  onclick="return false;"
+                >
+                  <img src="../images/close icon.png" alt="close menu icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="Option">Menu</a>
+                <div class="bar"></div>
+              </li>
+              <li>
+                <a href="../html code/ContactUs.html" class="Option"
+                  >Contact Us</a
+                >
+              </li>
+              <div class="search-bar">
+                <label class="autocomplete">Search: </label>
+                <input
+                  id="autocomplete"
+                  type="text"
+                  placeholder="Search for drinks..."
+                />
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- menu -->
+    <main>
+      <div class="menu-container">
+        <aside class="menu-sidebar hide-mobile">
+          <button onclick="showTab('montiSpecialtyCoffee')">
+            Monti Specialty Coffee
+          </button>
+          <button onclick="showTab('montiSignatureFancy')">
+            Monti Signature Fancy
+          </button>
+          <button onclick="showTab('coffeeFree')">Coffee Free</button>
+          <button onclick="showTab('montifrappe')">Montifrappé</button>
+        </aside>
+
+        <section class="menu-main">
+          <div id="montiSpecialtyCoffee" class="tab-content">
+            <h1>Monti Specialty Coffee</h1>
+            <p>
+              A selection of premium, hand-crafted coffees for true coffee
+              lovers.
+            </p>
+            <!-- montiSpecialtyCoffee -->
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="product-image">
+                  <img src="../img2/americanoc.JPG" alt="americanoc" />
+                </div>
+                <div class="menu-item-details">
+                  <h3>Americano</h3>
+                  <p>
+                    A bold black coffee for those who enjoy a classic flavor.
+                  </p>
+                  <p class="price">Rm6.90 (R)</p>
+                  <p class="price">Rm9.90 (B)</p>
+                  <button
+                    class="add-to-cart"
+                    onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSe3RrL5ZuajwBCiG1cI1CDgzYY-e654T38CQnwhWAdFg8s04Q/viewform?usp=pp_url'"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="product-image">
+                  <img src="../img2/cafelatte.JPG" alt="cafelatte" />
+                </div>
+                <div class="menu-item-details">
+                  <h3>Classic Café Latte</h3>
+                  <p>Smooth espresso blended with creamy milk.</p>
+                  <p class="price">Rm7.90 (R)</p>
+                  <p class="price">Rm10.90 (B)</p>
+                  <button
+                    class="add-to-cart"
+                    onclick="location.href='https://forms.gle/1fU9w9oZZk1fEaFk6'"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="product-image">
+                  <img
+                    src="../img2/caramelmacchiatoc.JPG"
+                    alt="caramelmacchiatoc"
+                  />
+                </div>
+                <div class="menu-item-details">
+                  <h3>Caramel Macchiato</h3>
+                  <p>
+                    A smooth espresso with steamed milk and a sweet caramel
+                    drizzle.
+                  </p>
+                  <p class="price">Rm10.90 (R)</p>
+
+                  <button
+                    class="add-to-cart"
+                    onclick="location.href='https://forms.gle/stStiKuEfiuZcANm9'"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="montiSignatureFancy" class="tab-content">
+            <h1>Monti Signature Fancy</h1>
+            <p>
+              A collection of premium, expertly crafted drinks with unique and
+              indulgent flavors.
+            </p>
+            <!-- montiSignatureFancy -->
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="product-image">
+                  <img
+                    src="../img2/brownsugarlatte.JPG"
+                    alt="brownsugarlatte"
+                  />
+                </div>
+                <div class="menu-item-details">
+                  <h3>Brown Sugar Latte</h3>
+                  <p>A latte infused with the deep sweetness of brown sugar.</p>
+                  <p class="price">Rm8.90 (R)</p>
+                  <p class="price">Rm11.90 (B)</p>
+                  <button
+                    class="add-to-cart"
+                    onclick="location.href='https://forms.gle/EhV7aqAgqs88CBC87'"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="product-image">
+                  <img
+                    src="../img2/gulamelakalatte.JPG"
+                    alt="gulamelakalatte"
+                  />
+                </div>
+                <div class="menu-item-details">
+                  <h3>Gula Melaka Latte</h3>
+                  <p>A latte sweetened with rich palm sugar syrup.</p>
+                  <p class="price">Rm8.90 (R)</p>
+                  <p class="price">Rm11.90 (B)</p>
+                  <button
+                    class="add-to-cart"
+                    onclick="location.href='https://forms.gle/VaTKXmqVAVhc4ork9'"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="product-image">
+                  <img src="../img2/dolcelatte.JPG" alt="dolcelatte" />
+                </div>
+                <div class="menu-item-details">
+                  <h3>Dolce Latte</h3>
+                  <p>A latte topped with a luscious caramel drizzle.</p>
+                  <p class="price">Rm8.90 (R)</p>
+                  <p class="price">Rm11.90 (B)</p>
+                  <button
+                    class="add-to-cart"
+                    onclick="location.href='https://forms.gle/tZujo8Qhe2XvVSAY6'"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="coffeeFree" class="tab-content">
+            <h1>Coffee Free</h1>
+            <p>
+              Refreshing beverages without coffee, perfect for any time of the
+              day.
+            </p>
+            <!-- coffeeFree -->
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="product-image">
+                  <img
+                    src="../img2/steoberri latte.JPG"
+                    alt="steoberri-latte"
+                  />
+                </div>
+                <div class="menu-item-details">
+                  <h3>Steoberee Latte</h3>
+                  <p>
+                    A strawberry milk latte for a touch of fruity sweetness.
+                  </p>
+                  <p class="price">Rm10.90 (R)</p>
+
+                  <button
+                    class="add-to-cart"
+                    onclick="location.href='https://forms.gle/GwkEk6wTNN9is9Le8'"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="product-image">
+                  <img src="../img2/matchalatte.JPG" alt="matchalatte" />
+                </div>
+                <div class="menu-item-details">
+                  <h3>Matcha Latte</h3>
+                  <p>A creamy latte infused with authentic matcha.</p>
+                  <p class="price">Rm9.90 (R)</p>
+
+                  <button
+                    class="add-to-cart"
+                    onclick="location.href='https://forms.gle/DPnmorRGfgXqxWQe6'"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="product-image">
+                  <img
+                    src="../img2/lemonadesparkling.JPG"
+                    alt="lemonadesparkling"
+                  />
+                </div>
+                <div class="menu-item-details">
+                  <h3>Lemonade Sparkling</h3>
+                  <p>Classic lemonade, elevated with a bubbly twist.</p>
+                  <p class="price">Rm9.90 (R)</p>
+
+                  <button
+                    class="add-to-cart"
+                    onclick="location.href='https://forms.gle/y7SHWNcGy9zUwdhY6'"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="montifrappe" class="tab-content">
+            <h1>Montifrappé</h1>
+            <p>
+              Cool, blended drinks that are perfect for a refreshing, icy treat.
+            </p>
+            <!-- montifrappe -->
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="product-image">
+                  <img src="../img2/chocochip.JPG" alt="chocochip" />
+                </div>
+                <div class="menu-item-details">
+                  <h3>ChocoChip</h3>
+                  <p>
+                    Blended chocolate and crushed chips for texture and taste.
+                  </p>
+                  <p class="price">Rm9.90 (R)</p>
+
+                  <button
+                    class="add-to-cart"
+                    onclick="location.href='https://forms.gle/BkB5aCHCEVXmftAq9'"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="product-image">
+                  <img
+                    src="../img2/caramelespressoc.JPG"
+                    alt="caramelespresso"
+                  />
+                </div>
+                <div class="menu-item-details">
+                  <h3>Caramel Espresso</h3>
+                  <p>A caramel-infused frappé for sweet indulgence.</p>
+                  <p class="price">Rm9.90 (R)</p>
+
+                  <button
+                    class="add-to-cart"
+                    onclick="location.href='https://forms.gle/gzXBhaXqNgAtNEQ1A'"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="product-image">
+                  <img src="../img2/mocha.JPG" alt="mocha" />
+                </div>
+                <div class="menu-item-details">
+                  <h3>Mocha</h3>
+                  <p>Chocolate and espresso blended into a refreshing drink.</p>
+                  <p class="price">Rm9.90 (R)</p>
+
+                  <button
+                    class="add-to-cart"
+                    onclick="location.href='https://forms.gle/3XkCGWjWmx32woP5A'"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="../javaScript/hamburger.js"></script>
+    <script src="../javaScript/menupage.js"></script>
+    <script src="../javaScript/showMenu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "assignment web tech",
+			"path": ".."
+		},
+		{
+			"name": "imgForMenu",
+			"path": "../../../../Downloads/assignment web tech share updated/assignment web tech share updated/imgForMenu"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "assignment web tech"
+	}
+}
